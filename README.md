@@ -24,11 +24,17 @@ sudo docker run -it --name mediaserver10 \
 
 # 播放url规则示例
 rtsp：rtsp://127.0.0.1:8554/000000013100000000/1
+
 rtmp：rtmp://127.0.0.1:8935/000000013100000000/1
+
 http-flv：http://127.0.0.1:8080/000000013100000000/1.live.flv
+
 hls：http://127.0.0.1:8080/000000013100000000/1/hls.m3u8
+
 websocket: ws://127.0.0.1:8080/000000013100000000/1.live.flv
+
 webrtc: http://127.0.0.1:8080/index/api/webrtc?app=000000013100000000&stream=1&type=play
+
 # 对讲音频下发路径
     ws://localhost:7002/00000000013400000001/0?type=1&pt=pcm&vendorType=1
     参数说明：
