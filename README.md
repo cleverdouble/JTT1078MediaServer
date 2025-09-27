@@ -15,6 +15,9 @@ sudo docker run -it --name mediaserver10 \
             -p 8000:8000/udp \
             -p 10000:10000/udp \
             leowade/mediaserver:1.0
+运行后如下图：
+<img width="1301" height="760" alt="image" src="https://github.com/user-attachments/assets/f0423a83-fa92-400d-b4c3-b2198ba12a64" />
+
 
 # 联系
 QQ: 458283868
