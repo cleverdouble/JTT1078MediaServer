@@ -41,6 +41,7 @@ webrtc: http://127.0.0.1:8080/index/api/webrtc?app=000000013100000000&stream=1&t
      type: //0-2013，1-2016或2019，用于SIM卡号长度的兼容
      pt: pcm //当前仅支持pcm格式的对讲输入
      vendorType:0 //厂商类型， 0-默认
-
+# 致谢
+   感谢夏楚 提供这么棒的开源流媒体服务框架ZLMediaKit: https://github.com/ZLMediaKit/ZLMediaKit
 # 联系
 QQ: 458283868
