@@ -3,7 +3,7 @@
   该模块仅为JTT1078终端设备的平台视频流服务器模块，需用户自主实现808上下行指令及服务。
 
 # docker方式下载运行
-sudo docker run -it --name mediaserver10 \
+sudo docker run -it --name mediaserver \
             -p 7001:7001 \
             -p 7002:7002 \
             -p 8888:8888 \
@@ -14,7 +14,7 @@ sudo docker run -it --name mediaserver10 \
             -p 8443:8443 \
             -p 8000:8000/udp \
             -p 10000:10000/udp \
-            leowade/mediaserver:1.0
+            leowade/mediaserver:1.1
 
 运行后如下图：
 <img width="1301" height="760" alt="image" src="https://github.com/user-attachments/assets/f0423a83-fa92-400d-b4c3-b2198ba12a64" />
