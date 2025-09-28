@@ -36,11 +36,13 @@ websocket: ws://127.0.0.1:8080/000000013100000000/1.live.flv
 webrtc: http://127.0.0.1:8080/index/api/webrtc?app=000000013100000000&stream=1&type=play
 
 # 对讲音频下发路径
-    ws://localhost:7002/00000000013400000001/0?type=1&pt=pcm&vendorType=1
+   对讲websocket音频下发参考： https://github.com/lin557/vue-live-talk
+   对讲音频下发路径示例：ws://localhost:7002/00000000013400000001/0?type=1&pt=pcm&vendorType=1
     参数说明：
-     type: //0-2013，1-2016或2019，用于SIM卡号长度的兼容
-     pt: pcm //当前仅支持pcm格式的对讲输入
+     type: //0-2013，1-2016及以上，用于SIM卡号长度的兼容
+     pt: pcm //支持pcm格式的对讲输入
      vendorType:0 //厂商类型， 0-默认
+  
 # 致谢
    感谢夏楚 提供这么棒的开源流媒体服务框架ZLMediaKit: https://github.com/ZLMediaKit/ZLMediaKit
 # 联系
