@@ -6,6 +6,7 @@
 sudo docker run -it --name mediaserver \
             -p 7001:7001 \
             -p 7002:7002 \
+            -p 7003:7003 \
             -p 8888:8888 \
             -p 8554:8554 \
             -p 8332:8332 \
@@ -14,13 +15,15 @@ sudo docker run -it --name mediaserver \
             -p 8443:8443 \
             -p 8000:8000/udp \
             -p 10000:10000/udp \
-            leowade/mediaserver:1.1
+            leowade/mediaserver:2.0
 
 运行后如下图：
 <img width="1301" height="760" alt="image" src="https://github.com/user-attachments/assets/f0423a83-fa92-400d-b4c3-b2198ba12a64" />
 
 # 终端连接地址
-  127.0.0.1:7001
+  实时：127.0.0.1:7001
+  历史：127.0.0.1:7002
+  终端上行对讲音频：127.0.0.1:7003
 
 # 播放url规则示例
 rtsp：rtsp://127.0.0.1:8554/000000013100000000/1
@@ -38,11 +41,11 @@ webrtc: http://127.0.0.1:8080/index/api/webrtc?app=000000013100000000&stream=1&t
 # 对讲音频下发路径
    对讲websocket音频下发参考： https://github.com/lin557/vue-live-talk 
    
-   对讲音频下发路径示例：ws://localhost:7002/00000000013400000001/0?type=1&pt=pcm&vendorType=1
+   对讲音频下发路径示例：ws://localhost:8888/00000000013400000001/0?type=1&pt=pcm&vendorType=0
     参数说明：
      type: //0-2013，1-2016及以上，用于SIM卡号长度的兼容
      pt: pcm //支持pcm格式的对讲输入
-     vendorType:0 //厂商类型， 0-默认
+     vendorType:0 //厂商类型， 0-默认 1-带4字节特殊厂商
   
 # 致谢
    感谢夏楚 提供这么棒的开源流媒体服务框架ZLMediaKit: https://github.com/ZLMediaKit/ZLMediaKit
