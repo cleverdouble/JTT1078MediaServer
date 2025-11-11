@@ -3,6 +3,7 @@
   该模块仅为JTT1078终端设备的平台视频流服务器模块，需用户自主实现808上下行指令及服务。
 
 # docker方式下载运行
+```
 sudo docker run -it --name mediaserver \
             -p 7001:7001 \
             -p 7002:7002 \
@@ -16,23 +17,29 @@ sudo docker run -it --name mediaserver \
             -p 8000:8000/udp \
             -p 10000:10000/udp \
             leowade/mediaserver:2.0
+```
 
 运行后如下图：
 <img width="1301" height="760" alt="image" src="https://github.com/user-attachments/assets/f0423a83-fa92-400d-b4c3-b2198ba12a64" />
 
 # 终端连接地址
+```
   实时：127.0.0.1:7001
   历史：127.0.0.1:7002
   终端上行对讲音频：127.0.0.1:7003
+```
 
 # 实时音视频播放url规则示例
+```
 rtsp：rtsp://127.0.0.1:8554/000000013100000000/1
 rtmp：rtmp://127.0.0.1:8935/000000013100000000/1
 http-flv：http://127.0.0.1:8080/000000013100000000/1.live.flv
 hls：http://127.0.0.1:8080/000000013100000000/1/hls.m3u8
 websocket: ws://127.0.0.1:8080/000000013100000000/1.live.flv
 webrtc: http://127.0.0.1:8080/index/api/webrtc?app=000000013100000000&stream=1&type=play
+```
 # 历史音视频播放url规则示例
+```
 历史音视频在实时音视频的手机号后添加"his"，如下所示：
 rtsp：rtsp://127.0.0.1:8554/000000013100000000his/1
 rtmp：rtmp://127.0.0.1:8935/000000013100000000his/1
@@ -40,7 +47,9 @@ http-flv：http://127.0.0.1:8080/000000013100000000his/1.live.flv
 hls：http://127.0.0.1:8080/000000013100000000his/1/hls.m3u8
 websocket: ws://127.0.0.1:8080/000000013100000000his/1.live.flv
 webrtc: http://127.0.0.1:8080/index/api/webrtc?app=000000013100000000his&stream=1&type=play
+```
 # 对讲音频下发路径
+```
    对讲websocket音频下发和播放参考： https://github.com/lin557/vue-live-talk 
    
    对讲音频下发路径示例：ws://localhost:8888/00000000013400000001/0?type=1&pt=pcm&vendorType=0
@@ -48,7 +57,7 @@ webrtc: http://127.0.0.1:8080/index/api/webrtc?app=000000013100000000his&stream=
      type: //0-2013，1-2016及以上，用于SIM卡号长度的兼容
      pt: pcm //支持pcm格式的对讲输入
      vendorType:0 //厂商类型， 0-默认 1-带4字节特殊厂商
-  
+```
 # 致谢
    感谢夏楚 提供这么棒的开源流媒体服务框架ZLMediaKit: https://github.com/ZLMediaKit/ZLMediaKit
 # 联系
