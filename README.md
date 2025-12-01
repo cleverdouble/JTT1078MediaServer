@@ -1,6 +1,10 @@
+简体中文 | [English](./README_en.md)
+
 # JTT1078MediaServer
   基于JT/T 1078标准实现的流媒体服务器，支持苏标/粤标，支持视频流H264/H265，音频流AAC/ADPCMA/G711A等格式，同时支持GB28181，客户端支持RTSP、RTMP、HTTP-FLV、WebSocket、WebRTC等播放方式。
   该模块仅为JTT1078终端设备的平台视频流服务器模块，需用户自主实现808上下行指令及服务。
+
+🔗 **官网介绍:** https://homepage-omega-lovat.vercel.app 
 
 # docker方式下载运行
 ```
@@ -61,4 +65,5 @@ webrtc: http://127.0.0.1:8080/index/api/webrtc?app=000000013100000000his&stream=
 # 致谢
    感谢夏楚 提供这么棒的开源流媒体服务框架ZLMediaKit: https://github.com/ZLMediaKit/ZLMediaKit
 # 联系
+邮箱: cleverdoublee@163.com
 QQ: 458283868
