@@ -63,7 +63,7 @@ webrtc: http://127.0.0.1:8080/index/api/webrtc?app=000000013100000000his&stream=
      vendorType:0 //厂商类型， 0-默认 1-带4字节特殊厂商
 ```
 # 致谢
-   感谢夏楚 提供这么棒的开源流媒体服务框架ZLMediaKit: https://github.com/ZLMediaKit/ZLMediaKit
+   感谢夏楚 提供这么棒的开源流媒体服务框架
 # 联系
 邮箱: cleverdoublee@163.com
 QQ: 458283868
